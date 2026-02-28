@@ -18,17 +18,23 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val btnPromedio = findViewById<Button>(R.id.btnPromedio)
+        val btnSalario = findViewById<Button>(R.id.btnSalario)
+        val btnCalculadora = findViewById<Button>(R.id.btnCalculadora)
 
-        findViewById<Button>(R.id.btnPromedio).setOnClickListener {
-            startActivity(Intent(this, PromedioActivity::class.java))
+        btnPromedio.setOnClickListener {
+            val intent = Intent(this, PromedioActivity::class.java)
+            startActivity(intent)
         }
 
-        findViewById<Button>(R.id.btnSalario).setOnClickListener {
-            startActivity(Intent(this, SalarioActivity::class.java))
+        btnSalario.setOnClickListener {
+            val intent = Intent(this, SalarioActivity::class.java)
+            startActivity(intent)
         }
 
-        findViewById<Button>(R.id.btnCalculadora).setOnClickListener {
-            startActivity(Intent(this, CalculadoraActivity::class.java))
+        btnCalculadora.setOnClickListener {
+            val intent = Intent(this, CalculadoraActivity::class.java)
+            startActivity(intent)
         }
     }
 }
