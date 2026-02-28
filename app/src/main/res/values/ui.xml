@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- colroes -->
+    <color name="ui_bg">#FFFFFF</color>
+    <color name="ui_primary">#0000FF</color>
+    <color name="ui_text">#1A1A1A</color>
+
+    <!-- espacios -->
+    <dimen name="ui_padding">16dp</dimen>
+    <dimen name="ui_gap">12dp</dimen>
+    <dimen name="ui_text_title">20sp</dimen>
+
+    <!-- elementos -->
+    <style name="UiButton">
+        <item name="android:backgroundTint">@color/ui_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">@dimen/ui_gap</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="UiTitle">
+        <item name="android:textSize">@dimen/ui_text_title</item>
+        <item name="android:textColor">@color/ui_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

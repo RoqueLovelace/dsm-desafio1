@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_bg"
+    android:padding="@dimen/ui_padding">
+
+    <LinearLayout
+        android:id="@+id/menuContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/ui_gap"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menú"
+            style="@style/UiTitle"
+            android:layout_marginBottom="@dimen/ui_gap" />
+
+        <Button
+            android:id="@+id/btnPromedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promedio"
+            style="@style/UiButton" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <Button
+            android:id="@+id/btnSalario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salario"
+            style="@style/UiButton" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <Button
+            android:id="@+id/btnCalculadora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora"
+            style="@style/UiButton" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

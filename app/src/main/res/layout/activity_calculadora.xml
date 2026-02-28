@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_bg"
+    android:padding="@dimen/ui_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/UiTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio 3: Calculadora"
+            android:layout_marginBottom="@dimen/ui_gap"/>
+
+        <EditText
+            android:id="@+id/etNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número 1"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número 2"
+            android:inputType="numberDecimal"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSuma"
+                style="@style/UiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suma"/>
+
+            <Button
+                android:id="@+id/btnResta"
+                style="@style/UiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resta"/>
+
+            <Button
+                android:id="@+id/btnMulti"
+                style="@style/UiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multiplicación"/>
+
+            <Button
+                android:id="@+id/btnDiv"
+                style="@style/UiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="División"/>
+
+            <Button
+                android:id="@+id/btnPot"
+                style="@style/UiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exponente (num1 ^ num2)"/>
+
+            <Button
+                android:id="@+id/btnRaiz"
+                style="@style/UiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Raíz cuadrada (√num1)"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap"/>
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/ui_text"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap"/>
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/UiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al menú"/>
+
+    </LinearLayout>
+</ScrollView>
