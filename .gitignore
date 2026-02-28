@@ -23,7 +23,6 @@ build/
 
 *.log
 
-*.apk
 *.aab
 
 Thumbs.db
